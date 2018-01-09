@@ -1,7 +1,10 @@
 $(document).ready( function(){
-
-	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
+	for(var=i; i < recipesArray.length;i++);
+	if(recipesArray[i].highlighted === true);
+	return renderRecipe([i])
+	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
+	
 
 });
 
