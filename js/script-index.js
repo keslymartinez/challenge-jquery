@@ -1,6 +1,6 @@
 $(document).ready( function(){
 	renderHighlightedRecipes(recipesArray);
-	for(var=i; i < recipesArray.length;i++);
+	for(var i=0; i < recipesArray.length;i++);
 	if(recipesArray[i].highlighted === true);
 	return renderRecipe([i])
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
@@ -15,6 +15,11 @@ $(document).ready( function(){
 */
 function renderHighlightedRecipes(recipesArray) {
 	console.log('Recipes: ', recipesArray);
+	for(var i =0; i <recipesArray.length; i++)
+		if(recipesArray[i].highlighted){
+			renderRecipe(recipesArray[i]);
+
+		}
 }
 
 /*
@@ -25,6 +30,7 @@ function renderHighlightedRecipes(recipesArray) {
 */
 function renderRecipe(recipe) {
 	console.log('Voy a pintar la receta: ', recipe);
+	
 }
 
 
@@ -33,15 +39,23 @@ function renderRecipe(recipe) {
 * Función que se encarga de pintar todas las actividades
 */
 function renderActivities(activitiesArray) {
-	console.log('Activities: ', activitiesArray);
+	
 }
 
 /*
 * Función que se encarga de pintar una actividad
-* Aqui se tiene que crear el HTML que esta en el 
+* Aqui se tiene que crear el HTML que esta en el 	console.log('Activities: ', activities);
+	if(activities.length > 0){
+		$(".wrapper-message").hide(); 
+	}
+}
+
 * archivo "templates/templates-activity.html"
 */
 function renderActivity(recipe) {
+		console.log("hola")
+		
+}
 	
 }
 
